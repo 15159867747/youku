@@ -78,10 +78,10 @@ def findtvshow(data):
 
         if doc:
             if str(doc['update']) == str(updatetime):
-                print '该剧目前没有更新*********************************************'
+                print '该剧目前没有更新XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
             else:
                 db.youku.update({'update': doc['update'], 'name': name}, {"$set": {'update': updatetime}})
-                print '该剧有更新*****************************************************'
+                print '该剧有更新√√√√√√√√√√√√√√'
         else:
             db.youku.insert(data)
             urllib.urlretrieve(data['picurl'], data['pic'])
